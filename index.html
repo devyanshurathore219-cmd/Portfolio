@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary identity: what search engines list and what the browser tab shows. -->
+    <title>Devyanshu Rathore — Frontend Engineer & Motion Designer</title>
+    <meta name="description" content="Portfolio of Devyanshu Rathore, a Frontend Engineer crafting cinematic, animation-rich web experiences with React, GSAP, and modern tooling." />
+
+    <!-- Open Graph and Twitter tags control how the link previews when shared on social platforms and in chat apps. -->
+    <meta property="og:title" content="Devyanshu Rathore — Frontend Engineer & Motion Designer" />
+    <meta property="og:description" content="Portfolio of Devyanshu Rathore, a Frontend Engineer crafting cinematic, animation-rich web experiences with React, GSAP, and modern tooling." />
+    <meta property="og:type" content="website" />
+    <!-- TODO: restore og:url and canonical once a production domain exists; both were removed because no domain is deployed yet. -->
+    <!-- TODO: add og:image (1200x630, under 300KB) — a summary_large_image card will not render its image without one. -->
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Tints mobile browser UI to match the site background; keep this in sync with the background token in src/index.css. -->
+    <meta name="theme-color" content="#07080a" />
+
+    <!-- Explicitly permits search engines to index this page and follow its links. -->
+    <meta name="robots" content="index, follow" />
+
+    <!-- Opens connections to the font origins early so text paints sooner; gstatic needs crossorigin because font files are fetched as CORS requests. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Instrument Serif, Inter, and JetBrains Mono; display=swap shows fallback text immediately instead of leaving it invisible while fonts load. -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Inline SVG data URI so the favicon costs no extra request; Safari does not support SVG data-URI favicons, so a .ico or .png fallback is needed for full coverage. -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50' y='.85em' text-anchor='middle' fill='%23a3d4b6' font-size='90' font-family='sans-serif'>DR</text></svg>" />
+  </head>
+  <body>
+    <!-- The app is client-rendered, so nothing renders at all without JavaScript. -->
+    <noscript>Devyanshu Rathore — Frontend Engineer. Please enable JavaScript to view this portfolio.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
